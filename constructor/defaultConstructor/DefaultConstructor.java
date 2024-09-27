@@ -4,9 +4,9 @@ class Cat {
     String name;
     int age;
 
-    Cat(String name, int age) {
-        this.name = name;
-        this.age = age;
+    Cat() {
+        this.name = "unknown";
+        this.age = 0;
     }
 
     void display() {
@@ -17,7 +17,7 @@ class Cat {
 
 class DefaultConstructor {
     public static void main(String[] args) {
-        Cat cat = new Cat("Whiskers", 3);
+        Cat cat = new Cat();
         cat.display();
     }
 }
